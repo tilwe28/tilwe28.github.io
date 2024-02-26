@@ -37,7 +37,6 @@ body {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  /* border-right: 0.065em solid whitesmoke; */
   animation: typing 1s steps(40, end) 1s 2 alternate-reverse;
 }
 #name span {
@@ -75,6 +74,7 @@ footer {
   font-size: 1.2em;
 }
 
+/* Typewriter and Blinking Cursor */
 @keyframes typing {
   from {
     width: 0;
@@ -90,5 +90,101 @@ footer {
   }
   50% {
     opacity: 1;
+  }
+}
+
+/* Star Background */
+#stars-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#stars1 {
+  width: 1px;
+  height: 1px;
+  box-shadow: 5vw 10vh white, 20vw 15vh white, 35vw 5vh white, 50vw 20vh white,
+    65vw 25vh white, 80vw 30vh white, 10vw 40vh white, 25vw 45vh white,
+    40vw 50vh white, 55vw 60vh white, 70vw 65vh white, 85vw 70vh white,
+    15vw 80vh white, 30vw 85vh white, 45vw 90vh white, 60vw 95vh white,
+    75vw 100vh white, 90vw 110vh white, 95vw 120vh white, 110vw 130vh white,
+    5vw 140vh white, 20vw 150vh white, 35vw 160vh white, 50vw 170vh white,
+    65vw 180vh white, 80vw 190vh white;
+  animation: scrolling-stars 50s linear infinite;
+}
+#stars2 {
+  width: 2px;
+  height: 2px;
+  box-shadow: 10vw 10vh white, 25vw 5vh white, 40vw 15vh white, 55vw 25vh white,
+    70vw 35vh white, 85vw 45vh white, 5vw 55vh white, 20vw 65vh white,
+    35vw 75vh white, 50vw 85vh white, 65vw 95vh white, 80vw 105vh white,
+    15vw 115vh white, 30vw 125vh white, 45vw 135vh white, 60vw 145vh white,
+    75vw 155vh white, 90vw 165vh white, 95vw 175vh white, 110vw 185vh white,
+    25vw 195vh white, 40vw 205vh white, 55vw 215vh white, 70vw 225vh white,
+    85vw 235vh white;
+  animation: scrolling-stars 60s linear infinite;
+}
+#stars3 {
+  width: 3px;
+  height: 3px;
+  box-shadow: 10vw 15vh white, 25vw 5vh white, 40vw 10vh white, 55vw 30vh white,
+    70vw 20vh white, 85vw 25vh white, 5vw 35vh white, 20vw 40vh white,
+    35vw 45vh white, 50vw 50vh white, 65vw 55vh white, 80vw 60vh white,
+    15vw 70vh white, 30vw 75vh white, 45vw 65vh white, 60vw 80vh white,
+    75vw 85vh white, 90vw 90vh white, 95vw 95vh white, 10vw 100vh white,
+    25vw 105vh white, 40vw 110vh white, 55vw 120vh white, 70vw 130vh white,
+    85vw 140vh white;
+  animation: scrolling-stars 55s linear infinite;
+}
+#stars4 {
+  width: 1px;
+  height: 1px;
+  margin-top: 90vh;
+  box-shadow: 5vw 10vh white, 20vw 15vh white, 35vw 5vh white, 50vw 20vh white,
+    65vw 25vh white, 80vw 30vh white, 10vw 40vh white, 25vw 45vh white,
+    40vw 50vh white, 55vw 60vh white, 70vw 65vh white, 85vw 70vh white,
+    15vw 80vh white, 30vw 85vh white, 45vw 90vh white, 60vw 95vh white,
+    75vw 100vh white, 90vw 110vh white, 95vw 120vh white, 110vw 130vh white,
+    5vw 140vh white, 20vw 150vh white, 35vw 160vh white, 50vw 170vh white,
+    65vw 180vh white, 80vw 190vh white;
+  animation: scrolling-stars 60s linear infinite;
+}
+#stars5 {
+  width: 2px;
+  height: 2px;
+  margin-top: 90vh;
+  box-shadow: 10vw 10vh white, 25vw 5vh white, 40vw 15vh white, 55vw 25vh white,
+    70vw 35vh white, 85vw 45vh white, 5vw 55vh white, 20vw 65vh white,
+    35vw 75vh white, 50vw 85vh white, 65vw 95vh white, 80vw 105vh white,
+    15vw 115vh white, 30vw 125vh white, 45vw 135vh white, 60vw 145vh white,
+    75vw 155vh white, 90vw 165vh white, 95vw 175vh white, 110vw 185vh white,
+    25vw 195vh white, 40vw 205vh white, 55vw 215vh white, 70vw 225vh white,
+    85vw 235vh white;
+  animation: scrolling-stars 55s linear infinite;
+}
+#stars6 {
+  width: 3px;
+  height: 3px;
+  margin-top: 90vh;
+  box-shadow: 10vw 15vh white, 25vw 5vh white, 40vw 10vh white, 55vw 30vh white,
+    70vw 20vh white, 85vw 25vh white, 5vw 35vh white, 20vw 40vh white,
+    35vw 45vh white, 50vw 50vh white, 65vw 55vh white, 80vw 60vh white,
+    15vw 70vh white, 30vw 75vh white, 45vw 65vh white, 60vw 80vh white,
+    75vw 85vh white, 90vw 90vh white, 95vw 95vh white, 10vw 100vh white,
+    25vw 105vh white, 40vw 110vh white, 55vw 120vh white, 70vw 130vh white,
+    85vw 140vh white;
+  animation: scrolling-stars 50s linear infinite;
+}
+
+@keyframes scrolling-stars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2000px);
   }
 }
