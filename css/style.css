@@ -32,8 +32,29 @@ body {
 }
 #name {
   font-size: 7rem;
-  margin: 0 0;
+  margin: 0 auto;
+
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  /* border-right: 0.065em solid whitesmoke; */
+  animation: typing 1s steps(40, end) 1s 2 alternate-reverse;
 }
+#name span {
+  font-size: 0.1em;
+  color: transparent;
+}
+#name::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.04em;
+  background-color: whitesmoke;
+  animation: cursor-blink-fade 1s infinite;
+}
+
 #student {
   margin: 0 0;
   margin-top: 0.5em;
@@ -52,4 +73,22 @@ footer {
 }
 .fa-brands:hover {
   font-size: 1.2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes cursor-blink-fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
